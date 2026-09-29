@@ -1,0 +1,12 @@
+{
+  "name": "presentaciones-narradas",
+  "description": "Presentaciones que se explican solas: voz en español que narra y va señalando cada cosa.",
+  "owner": { "name": "Irvid López" },
+  "plugins": [
+    {
+      "name": "presentacion-narrada",
+      "source": "./plugins/presentacion-narrada",
+      "description": "Arma presentaciones HTML con voz en español que narra, baja sola y señala cada pieza cuando la nombra."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "presentacion-narrada",
+  "displayName": "Presentación narrada",
+  "version": "1.0.3",
+  "description": "Presentaciones HTML que se explican solas: voz en español, señalamiento, subtítulos, 22 efectos y revisión automática en computadora y celular.",
+  "author": {
+    "name": "Irvid López"
+  }
+}

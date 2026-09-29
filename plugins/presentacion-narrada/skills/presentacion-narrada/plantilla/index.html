@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Presentación de ejemplo</title>
+<style id="tema">
+/*TEMA*/
+@font-face{font-family:"Raleway";font-weight:100 900;font-display:block;src:url("fonts/Raleway-var-latin.woff2") format("woff2")}
+@font-face{font-family:"Work Sans";font-weight:100 900;font-display:block;src:url("fonts/WorkSans-var-latin.woff2") format("woff2")}
+:root{
+  --marca:#3E5BA9; --marca-oscuro:#2B3F78; --marca-tinte:#EAF0FB; --acento:#E0795B; --brillo:#58C2A7;
+  --brillo-marca:#A9BFF2; --brillo-acento:#F6B39E;
+  --tinta:#1E2230; --tinta-2:#525868; --tinta-3:#838999;
+  --papel:#F8F8F5; --tarjeta:#FFFFFF; --linea:#E3E4DE; --suave:#EFF0EB;
+  --noche:#161A26; --noche-2:#232838; --en-noche:#F2F4F8; --en-noche-2:#BCC2D2;
+  --f-titulo:"Raleway",system-ui,sans-serif; --f-texto:"Work Sans",system-ui,sans-serif;
+}
+/*FIN-TEMA*/
+</style>
+<link rel="stylesheet" href="motor.css">
+<style>
+/* estilos propios de esta presentación (si hacen falta) */
+</style>
+</head>
+<body>
+<audio id="aud" src="audio/presentacion.mp3" preload="metadata"></audio>
+
+<!-- PORTADA: id="inicio" es la primera sección del guion -->
+<header class="hero" id="inicio" data-label="Inicio">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="grain"></div>
+  <div class="wrap">
+    <span class="kicker"><i></i>Área · Empresa</span>
+    <h1 data-palabras>Una presentación que <span class="grad">se explica sola</span></h1>
+    <p class="sub">Tú pones el contenido. La voz lo cuenta, la página baja sola y cada cosa se ilumina justo cuando se nombra.</p>
+    <div class="hstats">
+      <div class="hstat"><b><span data-count="4">4</span></b><span>pasos para armarla</span></div>
+      <div class="hstat"><b><span data-count="3">3</span></b><span>velocidades de voz</span></div>
+      <div class="hstat"><b><span data-count="1">1</span></b><span>solo archivo para compartir</span></div>
+      <div class="hstat"><b>0</b><span>programas que instalar para verla</span></div>
+    </div>
+    <button class="listen" type="button" data-escuchar><i>▶</i>Escuchar la presentación<span data-duracion>la página avanza sola</span></button>
+    <p class="byline">Preparado por Nombre Apellido · Área</p>
+  </div>
+  <div class="scrollcue"><i></i>Desliza</div>
+</header>
+
+<main>
+
+<section class="sec" id="indice" data-label="Índice" style="padding-top:70px">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Qué vas a ver</h2></div>
+    <ol class="toc stagger" data-auto></ol>
+  </div>
+</section>
+
+<section class="sec" id="resumen" data-label="En una página">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Todo en una página</h2><span class="tag">Resumen</span></div>
+    <p class="lead reveal" id="lead-resumen">Las cifras cuentan solas cuando aparecen, y la voz puede hacerlas crecer o girar como tragamonedas.</p>
+    <div class="grid3 stagger" id="cifras">
+      <div class="stat"><b><span data-count="12">12</span></b><span>secciones como máximo; más cansa</span></div>
+      <div class="stat"><b><span data-count="90">90</span> s</b><span>por sección, más o menos</span></div>
+      <div class="stat"><b><span data-count="2026">2026</span></b><span>el año en que la armamos</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="proceso" data-label="Cómo se arma">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Cómo se arma</h2></div>
+    <div class="flujo stagger">
+      <div class="line"></div><i class="spark"></i><i class="spark"></i><i class="spark"></i>
+      <div class="nodo"><div class="ic">1</div><b>Contenido</b><span>Tus datos, tus secciones.</span></div>
+      <div class="nodo"><div class="ic">2</div><b>Guion</b><span>Lo que dice la voz, sección por sección.</span></div>
+      <div class="nodo"><div class="ic">3</div><b>Voz</b><span>Se genera sola, en español de México.</span></div>
+      <div class="nodo"><div class="ic">4</div><b>Archivo</b><span>Un solo HTML que abre sin internet.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="tendencia" data-label="Gráficas">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Gráficas que se dibujan</h2></div>
+    <div class="grid2">
+      <figure class="grafica card" id="grafica" data-valores="120,138,131,164,190,236" data-etiquetas="Abr,May,Jun,Jul,Ago,Sep" aria-label="Citas por mes, de abril a septiembre"><figcaption>Citas por mes. Datos de ejemplo.</figcaption></figure>
+      <div class="card anillos reveal" id="anillos">
+        <div class="anillo" data-valor="72"><span>de las citas se confirman solas</span></div>
+        <div class="anillo" data-valor="94"><span>de las pacientes llegan a su hora</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="frase" data-label="Una frase">
+  <div class="wrap">
+    <p class="cita reveal" id="cita">Lo que no se mide se ve bien y está mal.</p>
+    <span class="quien reveal">La regla con la que revisamos todo</span>
+  </div>
+</section>
+
+<section class="sec" id="pestanas" data-label="Pestañas">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Pestañas que la voz abre</h2></div>
+    <div class="tabs reveal" data-tabs="ej" role="tablist">
+      <button class="tab" type="button" data-p="p-uno" aria-selected="true">Primera</button>
+      <button class="tab" type="button" data-p="p-dos" aria-selected="false">Segunda</button>
+    </div>
+    <div class="panel on" data-group="ej" id="p-uno"><div class="grid3"><div class="card"><h3>Uno</h3><p>Lo que se ve al entrar.</p></div><div class="card"><h3>Dos</h3><p>Otra pieza.</p></div><div class="card"><h3>Tres</h3><p>Y otra más.</p></div></div></div>
+    <div class="panel" data-group="ej" id="p-dos"><div class="grid2" id="duo"><div class="card"><h3>Antes</h3><p>Todo pasaba por una persona.</p></div><div class="card"><h3>Ahora</h3><p>Cada área publica lo suyo.</p></div></div></div>
+  </div>
+</section>
+
+<section class="sec" id="pasos" data-label="Paso a paso">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Un paso a paso</h2><button class="playbtn" type="button" data-play="s1">▶ Repetir</button></div>
+    <div class="stepper reveal" id="s1">
+      <div class="rail"><b></b></div>
+      <div class="st"><div class="c">1</div><b>Pide</b><span>Alguien trae la necesidad.</span></div>
+      <div class="st"><div class="c">2</div><b>Arma</b><span>Se construye.</span></div>
+      <div class="st"><div class="c">3</div><b>Revisa</b><span>Se mide antes de mostrar.</span></div>
+      <div class="st"><div class="c">4</div><b>Entrega</b><span>Queda en vivo.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="comparacion" data-label="Antes y después">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Barras que se comparan</h2></div>
+    <div class="barras" id="barras">
+      <div class="fila"><span class="nombre">Antes<small>cómo estaba</small></span><div class="pista"><div class="f gris" style="--w:88%"></div></div><span class="valor">19.4 s</span></div>
+      <div class="fila"><span class="nombre">Después<small>cómo quedó</small></span><div class="pista"><div class="f" style="--w:14%"></div></div><span class="valor">3.0 s</span></div>
+    </div>
+    <div class="bigshift mt reveal"><span class="from">19.4 s</span><span class="arr">→</span><span class="to" id="nuevo">3.0 s</span></div>
+  </div>
+</section>
+
+<section class="sec" id="riesgos" data-label="Tarjetas que giran">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Tarjetas que giran</h2></div>
+    <p class="lead reveal">Al frente, el problema. Atrás, cómo se resolvió.</p>
+    <div class="voltea-grid stagger">
+      <button class="voltea" type="button"><span class="giro"><span class="frente"><small>Riesgo</small><strong>Se ve bien y está mal</strong><em>Toca para voltear</em></span><span class="atras"><small>Cómo quedó</small><span>Se mide con números, no a ojo.</span></span></span></button>
+      <button class="voltea" type="button"><span class="giro"><span class="frente"><small>Riesgo</small><strong>El audio se desfasa</strong><em>Toca para voltear</em></span><span class="atras"><small>Cómo quedó</small><span>Cada señalamiento usa el tiempo real de la palabra.</span></span></span></button>
+      <button class="voltea" type="button"><span class="giro"><span class="frente"><small>Riesgo</small><strong>No abre en el celular</strong><em>Toca para voltear</em></span><span class="atras"><small>Cómo quedó</small><span>Se revisa en 390 px antes de entregar.</span></span></span></button>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="siguiente" data-label="Lo que sigue">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Lo que sigue</h2></div>
+    <div class="grid2">
+      <ul class="tl" id="tl"><i class="draw"></i>
+        <li><b>Esta semana</b>Primera versión.</li>
+        <li><b>Siguiente semana</b>Revisión con el equipo.</li>
+        <li><b>Fin de mes</b>Se presenta.</li>
+      </ul>
+      <div>
+        <table class="reveal">
+          <tr><th>Qué</th><th>Quién</th></tr>
+          <tr><td>Contenido</td><td>El área</td></tr>
+          <tr><td>Revisión</td><td>Dirección</td></tr>
+        </table>
+        <p class="callout reveal" id="nota">La primera versión se enseña el lunes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer><div class="wrap">Presentación de ejemplo · se arma con la plantilla de presentaciones narradas.</div></footer>
+<script src="motor.js"></script>
+<script>
+/* acciones propias de esta presentación (opcional):
+   Presentacion.acciones.brillar = function(el, valor){ el.animate([{filter:'brightness(1.4)'},{filter:'none'}], 900) } */
+</script>
+</body>
+</html>
